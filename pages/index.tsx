@@ -5,6 +5,8 @@ import Navbar from "@/components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 import AboutSection from "@/components/AbouSection";
 import ProjectSection from"@/components/ProjectSection";
+import EmailSsection from "@/components/EmailSection";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -14,8 +16,9 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
-
+        <EmailSsection />
       </div>
+      <Footer />
     </main>
   );
 }
