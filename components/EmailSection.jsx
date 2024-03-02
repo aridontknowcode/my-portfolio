@@ -1,6 +1,6 @@
 import React from "react";
 import githubIcon from "../public/github-icon.svg";
-import LinkedInIcon from "../public/Linkedin-icon.svg";
+import LinkedInIcon from "../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
