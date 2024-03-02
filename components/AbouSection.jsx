@@ -79,8 +79,8 @@ const AboutSection = () => {
         <motion.div 
         initial={{ opacity: 0,}}
         animate={{ opacity: 1,}}
-        transition={{ duration: 3 }}
-        className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        transition={{ duration: 1 }}
+        className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-41 sm:py-16 xl:px-16">
             <Image src="/images/airasia.jpg" alt="a picture of a person with an google logo on the wall" width={500} height={500} />
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                 <h2 className="text-4xl font-bold text-white mb-4">About Me 👋</h2>
