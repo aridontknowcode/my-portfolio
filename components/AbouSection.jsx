@@ -65,7 +65,7 @@ const AboutSection = () => {
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                 <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                 <p className="text-base lg:text-lg ">
-                I am a new developer, currently going into next.js.
+                Graduated from Uitm Perlis Arau, Finished my internship at Veecotech.
                 </p>
                 <div className="flex flex-row mt-8">
                     <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
