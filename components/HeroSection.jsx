@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 
 
@@ -13,12 +14,17 @@ const HeroSection = () => {
                 {/* `sm:text-left` This overrides the 'text-center' class for screens larger than */}
                 {/* or equal to the small breakpoints ('sm'), ensuring that text aligns to the left */}
                 {/* for those screens */}
-                <div className="col-span-7 self-center text-center sm:text-left">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 1 }}
+                    className="col-span-7 self-center text-center sm:text-left"
+                >
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600 ">
                             Hello, I'm {""}
                         </span>
-                        <br/>
+                        <br />
                         <TypeAnimation
                             sequence={[
                                 // Same substring at the start will only be typed out once, initially
@@ -48,9 +54,13 @@ const HeroSection = () => {
                     {/* text-lg means the text will be xl size for default */}
                     {/* lg:text-xl the text will be xl size for large screens */}
 
-                </div>
+                </motion.div>
                 <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-                    <div className="rounded-full bg-[#181818] w-[250px] h-[150px] lg:w-[400px] lg:h-[400px] relative">
+                    <motion.div
+                        initial={{ opacity: 0, translateX:-100 }}
+                        animate={{ opacity: 1, translateX:1 }}
+                        transition={{ duration: 1 }}
+                        className="rounded-full bg-[#181818] w-[250px] h-[150px] lg:w-[400px] lg:h-[400px] relative">
                         <Image
                             src="/images/hero-image.png"
                             alt="hero image"
@@ -58,10 +68,10 @@ const HeroSection = () => {
                             width={350}
                             height={350}
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 
