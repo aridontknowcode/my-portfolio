@@ -9,11 +9,11 @@ const EmailSection = () => {
     <section className="grid md:grid-cols-2 my-12 py-24 gap-4">
         {/* <div className=""></div> */}
         <div>
-            <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
+            <h5 className="text-xl font-bold text-white my-2">Lets Connect</h5>
             <p className="text-[#ADB7BE] mb-4 max-w-md">
                 {" "}
-                I'm currently looking for new opportunities, my inbox is always open,
-                Wether you have a question or just want to say hi, I'll try my best
+                I am currently looking for new opportunities, my inbox is always open,
+                Wether you have a question or just want to say hi, I will try my best
                 to get back to you!
             </p>
             <div className="socials flex flex-row gap-2">
@@ -57,7 +57,7 @@ const EmailSection = () => {
                         name="message" 
                         id="message"
                         className="bg-[#18191E] border border-[#33353F] placeholder-[#92CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 mb-6"
-                        placeholder="Let's chat!"
+                        placeholder="Lets chat!"
                      />
                      <button
                         type="submit"
