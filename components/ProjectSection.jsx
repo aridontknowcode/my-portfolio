@@ -11,7 +11,7 @@ const projectsData = [
         description: "A trivia website made using laravel and bootstrap",
         Image: "/images/projects/trivia-website.png",
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/aridontknowcode/trivia-website",
         previewUrl: "/"
     },
     {
