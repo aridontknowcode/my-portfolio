@@ -87,7 +87,7 @@ const AboutSection = () => {
                 <p className="text-base lg:text-lg ">
                 🎓Graduated from Uitm Perlis Arau in Computer Science. Curently diving into next.js🌐
                 </p>
-                <div className="flex flex-row mt-8">
+                <div className="mt-8 flex flex-wrap justify-start">
                     <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
                         {" "} Skills {" "}
                     </TabButton>
